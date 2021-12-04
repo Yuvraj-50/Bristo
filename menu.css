@@ -1,0 +1,128 @@
+/* menu page */
+
+/* page title */
+#pagetitle {
+  margin-top: 10rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.pagetitle__text {
+  font-size: 2rem;
+  color: var(--black-1);
+}
+
+@media (min-width: 768px) {
+  #pagetitle {
+    padding-top: 5rem;
+  }
+  .pagetitle__text {
+    font-size: 3.6rem;
+  }
+}
+
+/* end of page title */
+
+/* ourspecial section */
+#ourspecial {
+  padding: 0;
+}
+
+.ourspecial__title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 2rem;
+}
+
+.ourspecial__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+.ourspecial__item {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--lightGreen-1);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.ourspecial__item__img,
+.ourspecial__item__info {
+  flex: 1;
+}
+
+.ourspecial__item__img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ourspecial__item__img img {
+  object-fit: cover;
+}
+
+.ourspecial__item__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--black-1);
+  line-height: 1.2;
+}
+
+.ourspecial__item__price {
+  font-size: 1.8rem;
+  color: var(--green-1);
+  margin-bottom: 1rem;
+}
+
+.ourspecial__item__star {
+  width: max-content;
+  max-height: 15px;
+}
+
+@media (min-width: 768px) {
+  .ourspecial__title {
+    font-size: 2.4rem;
+  }
+
+  .ourspecial__wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: none;
+  }
+  .ourspecial__item {
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .ourspecial__item__title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .ourspecial__item__price {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1100) {
+  .ourspecial__item__img {
+    flex: 4;
+  }
+  .ourspecial__item__info {
+    flex: 3;
+  }
+}
+/* endourspecial section */
+
+/* dish grid */
+#dish__grid {
+  padding-bottom: 0;
+}
+
+#dish__grid:last-of-type {
+  margin-bottom: 10rem;
+}
+/* end of the dish grid */
